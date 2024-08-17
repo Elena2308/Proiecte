@@ -1,0 +1,535 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+.top-bar {
+  background-color: #4267B2;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.main-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.sidebar-left {
+  width: 25%;
+  padding: 15px;
+  background-color: rgb(251, 249, 241);
+  border-right: 1px solid #ddd;
+}
+
+.menu-item {
+  margin: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: #333;
+}
+
+.content-center {
+  width: 60%;
+  padding: 20px;
+}
+
+.profile-section {
+  text-align: center;
+  background-color: rgb(229, 225, 218);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cover-photo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: -75px;
+  border: 5px solid #ffffff;
+}
+
+.user-details {
+  background-color: rgb(229, 225, 218);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.user-info h3 {
+  margin-bottom: 5px;
+}
+
+.add-story {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #4267B2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.user-posts .post img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.photo-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.photo-grid img {
+  width: 32%;
+  height: auto;
+}
+
+.video-grid {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+video {
+  width: 48%;
+}
+
+.sidebar-right {
+  width: 25%;
+  padding: 20px;
+  background-color: rgb(251, 249, 241);
+  border-left: 1px solid #ddd;
+}
+
+.sidebar-right h3 {
+  margin-bottom: 10px;
+}
+
+.messages-section, .spam-section, .requests-section, .notes-section {
+  margin-bottom: 20px;
+}
+
+.notification1 {
+  background-color: #107e66;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification1:hover {
+  background: red;
+}
+
+.notification1 .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  background: rgb(47, 255, 0);
+  color: white;
+}
+.notification2 {
+  background-color: #56a6bc;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification2:hover {
+  background: red;
+}
+
+.notification2 .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  background: rgb(81, 174, 235);
+  color: white;
+}
+.notification3 {
+  background-color: #eb9b9b;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification3:hover {
+  background: red;
+}
+
+.notification3 .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  background: rgb(171, 99, 99);
+  color: white;
+}
+.notification4 {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.notification4:hover {
+  background: rgb(130, 23, 23);
+}
+
+.notification4 .badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+
+.coupon1 {
+  border: 5px dotted #bbb;
+  width: 40%;
+  border-radius: 15px; 
+  margin: 0 auto; 
+  max-width: 600px;
+}
+
+.container1 {
+  padding: 2px 16px;
+  background-color: #fff7dd;
+}
+.coupon2 {
+  border: 5px dotted #bbb;
+  width: 40%;
+  border-radius: 15px; 
+  margin: 0 auto; 
+  max-width: 600px;
+}
+.container2 {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+
+.btn {
+  background-color: DodgerBlue; 
+  border: none; 
+  color: white; 
+  padding: 10px 14px; 
+  font-size: 13px; 
+  cursor: pointer; 
+}
+
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #444b92d7;
+  font-size: 20px;
+  color: white;
+}
+
+
+.callout-container {
+  padding: 15px;
+  background-color: #7da4da;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+.danger {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+}
+.succes {
+  background-color: #94aee3;
+  border-left: 6px solid #0000d2;
+}
+.info {
+  background-color: #9ed49a;
+  border-left: 6px solid #44c714;
+}
+.warning {
+  background-color: #e1f389;
+  border-left: 6px solid #dcd106;
+}
+
+
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+.checked {
+  color: orange;
+}
+.checked {
+  color: orange;
+}
+.checked {
+  color: orange;
+}
+* {
+  box-sizing: border-box;
+}
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+.right {
+  text-align: right;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.facebook-post {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 15px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.post-date {
+  color: #606770;
+  font-size: 12px;
+}
+
+.post-content {
+  margin: 10px 0;
+}
+
+.post-content p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.post-image {
+  width: 70%;
+  border-radius: 10px;
+}
+
+.post-reactions {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-top: 1px solid #e9ebee;
+  border-bottom: 1px solid #e9ebee;
+  margin-bottom: 10px;
+}
+
+.post-reactions span {
+  font-size: 14px;
+  color: #606770;
+}
+
+.post-comments .comment {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.comment-user {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.comment-text {
+  color: #606770;
+}
