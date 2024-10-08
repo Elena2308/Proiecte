@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook- Profile Page</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../js/script.js">
+</head>
+<body>
+    <a href="feed.html">Catre feed</a>
+    <div class="cover-photo-container">
+        <img src="../assests/pexels-photo-268941.jpeg" alt="Cover Photo" class="cover-photo">
+        <div class="profile-photo-container">
+            <img src="../assests/profile.png" alt="Profile Photo" class="profile-photo">
+        </div>
+        <button class="edit-cover">Editează fotografia de copertă</button>
+    </div>
+
+    <div class="profile-info">
+        <h1>Elena B.</h1>
+        <p>1.3K prieteni</p>
+        <div class="friend-list">
+           
+        </div>
+        <button class="add-story">+ Adaugă în poveste</button>
+        <button class="edit-profile">Editează profilul</button>
+    </div>
+
+    <nav class="profile-navigation">
+        <ul>
+            <li onclick="scrollToSection('postari')">Postări</li>
+            <li onclick="scrollToSection('despre')">Despre</li>
+            <li onclick="scrollToSection('prieteni')">Prieteni</li>
+            <li onclick="scrollToSection('fotografii')">Fotografii</li>
+            <li onclick="scrollToSection('clipuri-video')">Clipuri video</li>
+            <li onclick="scrollToSection('vizite')">Vizite</li>
+            <li onclick="scrollToSection('mai-multe')">Mai multe</li>
+        </ul>
+          
+<div id="visit-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close" onclick="closeVisitModal()">&times;</span>
+        <h2>Vizite</h2>
+        <ul id="visit-list">
+            <li>Vizita la muzeu 🖼️</li>
+            <li>Plimbare în parc 🌳</li>
+            <li>Cină cu prietenii 🍽️</li>
+            <li>Concert live 🎶</li>
+        </ul>
+        <div class="add-visit">
+            <input type="text" id="visit-input" placeholder="Adaugă o vizită...">
+            <button onclick="addVisit()">Adaugă</button>
+        </div>
+    </div>
+</div>
+    </nav>
+    
+    <div class="about-section" id="despre">
+        <h2>Despre</h2>
+        <p>💼 Lucrează la CBCV al armatei Beijing</p>
+        <p>🎓 A studiat MS/PhD în Biofizică la Universitatea din București</p>
+        <p>🏠 Locuiește în Canada</p>
+        <button class="edit-btn" onclick="editAboutSection()">Editează secțiunea</button>
+    </div>
+    
+    <div class="post-section" id="postari">
+        <h2>Postări</h2>
+
+        <div class="content">
+            <div class="thoughts-section">
+                <img src="../assests/profile.png" alt="Profile Picture" class="profile-pic">
+                <textarea id="thoughts" placeholder="La ce te gândești?"></textarea>
+                <div class="post-options">
+                    <button>Clip video în direct</button>
+                    <button>Foto/Video</button>
+                    <button>Eveniment din viață</button>
+                </div>
+                <button class="post-btn" onclick="createPost()">POSTEAZĂ</button>
+            </div>
+    
+        
+            <div id="posts-container"></div>
+        </div>
+    
+ 
+    <div class="post-container" id="post-container"></div>
+
+    <div class="post">
+        <div class="post-header">
+            <img src="../assests/profile.png" alt="Profile Picture" class="profile-picture">
+            <div class="user-info">
+                <p class="user-name">Elena B.</p>
+                <p class="post-date">8 octombrie 2024</p>
+            </div>
+        </div>
+        <div class="post-content">
+            <p>Astăzi este o zi minunată!</p>
+            <img src="../assests/biscuiti.jpg" alt="Photo description" class="post-image" width="350px" height="100px">
+        </div>
+        <div class="reaction-buttons">
+            <button onclick="likePost(this)">👍 Like (<span id="like-count">20</span>)</button>
+            <button onclick="lovePost(this)">❤️ Ador</button>
+            <button onclick="hahaPost(this)">😂 Haha</button>
+            <button onclick="sharePost()">🔁 Share</button>
+        </div>
+        <div class="comment-section">
+            <div class="comments">
+                <div class="comment">
+                    <img src="../assests/pozacontact2.jpg" alt="Maria's Profile Picture" class="comment-profile-picture">
+                    <p><strong>Maria P:</strong> Super zi!</p>
+                </div>
+                <div class="comment">
+                    <img src="../assests/pozacontact2.jpg" alt="Andrei's Profile Picture" class="comment-profile-picture">
+                    <p><strong>Andrei L:</strong> Minunat!</p>
+                </div>
+            </div>
+            <div class="comment-input">
+                <img src="../assests/profile.png" alt="Your Profile Picture" class="comment-profile-picture">
+                <input type="text" placeholder="Adaugă un comentariu" id="comment-input">
+                <button onclick="submitComment()">Trimite</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="share-message" style="display: none; position: absolute; background: #fff; border: 1px solid #ccc; padding: 10px; border-radius: 5px;">
+        Ați distribuit această postare!
+    </div>
+    
+
+ 
+<div class="friend-suggestions" id="prieteni">
+    <h2>Sugestii prieteni</h2>
+    <div class="friend">
+        <img src="../assests/pozacontact2.jpg" alt="Maria Popescu" class="friend-profile-picture" width="40px">
+        <span>Maria Popescu</span>
+        <button onclick="addRemoveFriend(this)">Adaugă</button>
+    </div>
+    <div class="friend">
+        <img src="../assests/pozacontact2.jpg" alt="Andrei S" class="friend-profile-picture" width="40px">
+        <span>Andrei S</span>
+        <button onclick="addRemoveFriend(this)">Adaugă</button>
+    </div>
+    <div class="friend">
+        <img src="../assests/pozacontact2.jpg" alt="Ana Maria S" class="friend-profile-picture"width="40px">
+        <span>Ana Maria S</span>
+        <button onclick="addRemoveFriend(this)">Adaugă</button>
+    </div>
+    <div class="friend">
+        <img src="../assests/pozacontact2.jpg" alt="Diana Soare" class="friend-profile-picture"width="40px">
+        <span>Diana Soare</span>
+        <button onclick="addRemoveFriend(this)">Adaugă</button>
+    </div>
+    <div class="friend">
+        <img src="../assests/pozacontact2.jpg" alt="David S." class="friend-profile-picture"width="40px">
+        <span>David S.</span>
+        <button onclick="addRemoveFriend(this)">Adaugă</button>
+    </div>
+</div>
+
+
+    <script src="../js/profil.js"></script>
+
+    <script>
+        document.getElementById("logout").addEventListener("click", function() {
+            window.location.href = "../login.html"; 
+        });
+    </script>
+
+</body>
+</html>

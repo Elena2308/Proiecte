@@ -1,0 +1,632 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #efefef;
+  margin: 0;
+}
+
+.cover-photo-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #3b3e40;
+}
+
+.cover-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-photo-container {
+  position: absolute;
+  bottom: -50px;
+  left: 30px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.edit-cover {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #a19d9c;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.profile-info {
+  padding: 60px 30px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.profile-info h1 {
+  color: #3b3e40;
+}
+
+.profile-info p {
+  color: #896767;
+}
+
+.friend-list {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.friend-list img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.add-story, .edit-profile {
+  background-color: #3b3e40;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.profile-navigation ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  background-color: #a19d9c;
+  margin: 0;
+}
+
+.profile-navigation ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.thoughts-section {
+  background-color: white;
+  margin: 20px auto;
+  width: 50%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.thoughts-section textarea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.post-options button {
+  background-color: #3b3e40;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.post {
+  background-color: white;
+  margin: 20px auto;
+  width: 50%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #efefef;
+  color: #3b3e40;
+}
+
+
+.profile-navigation {
+  background-color: #3b3e40;
+  padding: 10px;
+  text-align: center;
+}
+
+.profile-navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-navigation li {
+  display: inline;
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-navigation li:hover {
+  text-decoration: underline;
+}
+
+
+.about-section {
+  background-color: #a19d9c;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.about-section h2 {
+  font-size: 24px;
+}
+
+.edit-btn {
+  background-color: #896767;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.post-section {
+  background-color: #9a876a;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.post-section h2 {
+  font-size: 24px;
+}
+
+.post {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.reaction-buttons {
+  margin-top: 10px;
+}
+
+.reaction-buttons button {
+  background-color: #efefef;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reaction-buttons button:hover {
+  background-color: #ccc;
+}
+
+
+.friend-suggestions {
+  background-color: #896767;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.friend-suggestions h2 {
+  font-size: 24px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.friend button {
+  background-color: #3b3e40;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #efefef;
+  color: #3b3e40;
+}
+
+
+.content {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.content {
+  width: 990px;
+  margin: 0 auto;
+}
+
+.thoughts-section {
+  background-color: rgb(128, 119, 119);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.post-options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-options button {
+  background-color: #3b3e40;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-options button:hover {
+  background-color: #5a5d60;
+}
+
+.post-btn {
+  background-color: #896767;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  align-self: flex-end;
+}
+
+.post-btn:hover {
+  background-color: #a19d9c;
+}
+
+
+#posts-container {
+  margin-top: 20px;
+}
+
+.post {
+  background-color: rgb(238, 222, 222);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 1100px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-header .post-info {
+  font-size: 14px;
+}
+
+.post-content {
+  margin-top: 10px;
+}
+
+.reaction-buttons {
+  margin-top: 10px;
+}
+
+.reaction-buttons button {
+  background-color: #efefef;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reaction-buttons button:hover {
+  background-color: #ccc;
+}
+
+.post {
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+}
+
+.post-content p {
+  margin: 10px 0;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.reaction-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.reaction-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3b3e40;
+}
+
+.reaction-buttons button:hover {
+  color: #896767;
+}
+
+.comment-section {
+  margin-top: 10px;
+}
+
+.comment-section input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.comments {
+  margin-top: 10px;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.comment .comment-text {
+  flex-grow: 1;
+}
+
+.comment .delete-comment {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+
+.post {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: inline-block;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.post-content {
+  margin: 10px 0;
+}
+
+.post-image {
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+
+.reaction-buttons button {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.comment-section {
+  margin-top: 15px;
+}
+
+.comments .comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.comment-profile-picture {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-input input {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.comment-input button {
+  background-color: #4267B2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-visit {
+  margin-top: 20px;
+}

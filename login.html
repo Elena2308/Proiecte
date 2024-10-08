@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <section class="formContainer">
+        <h1 id="headerTitle">Login</h1>
+        <form action="">
+            <span id="error" style="display: none;"></span>
+            <div class="formField">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="formField">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="formField rememberUserField">
+                <input type="checkbox" id="rememberUser">
+                <label for="rememberUser">Click here to remember me</label>
+            </div>
+
+            <input type="submit" value="Log in" class="loginButton" id="loginButton">
+            <a href="#" id="forgotPassword"><strong>Forgot Password?</strong></a>
+        </form>
+
+        <hr>
+        <button class="registerButton" id="switchButton">Create an account</button>
+
+        <a href="pages/feed.html">Catre contul meu</a>
+    </section>
+    
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    background-image: url('../assests/loginBackground.jpg');
+}
+
+a {
+    text-decoration: none;
+}
+
+.formContainer {
+    margin: 5rem auto;
+    width: 95%;
+    max-width: 30rem;
+    border-radius: 0.5rem;
+    background-color: teal;
+    color: white;
+    box-shadow: 0 1px 4px #888;
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formField input {
+    background-color: lightblue;
+    color: purple;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.formField.rememberUserField input {
+    width: 10%;
+}
+
+.formField.rememberUserField label {
+    text-align: left;
+    cursor: pointer;
+}
+
+.loginButton {
+    background-color: cadetblue;
+    border: 1px solid white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.loginButton:hover {
+    background-color: lightblue;
+    border: cadetblue;
+    color: #000050;
+    font-weight: bold;
+}
+
+a strong {
+    color: yellow;
+}
+
+.registerButton {
+    background-color: turquoise;
+    border: 1px solid white;
+    padding: 0.5rem 2.5rem;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    width: 75%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.registerButton:hover {
+    opacity: 0.8;
+    font-weight: bold;
+}

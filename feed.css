@@ -1,0 +1,1096 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: lightblue;
+}
+
+header .mainSearch {
+  display: flex;
+  align-items: center;
+}
+
+header .mainSearch .logo {
+  padding: 1rem;
+  font-size: 3rem;
+  color: royalblue;
+}
+
+header .mainSearch .logo:hover {
+  color: darkblue;
+}
+
+header .mainSearch .searchInput {
+  height: 3rem;
+  border-radius: 1.5rem;
+  padding: 0 1rem;
+  border-color: beige;
+}
+
+header .mainSearch .searchInput:focus {
+  border: 0.25rem solid teal;
+}
+
+header .mainNavigation .navigation,
+header .links {
+  display: flex;
+}
+
+header .mainNavigation .navigation > li > a {
+  border-radius: 50%;
+  background-color: aquamarine;
+  margin: 0 0.35rem;
+  display: flex;
+}
+
+header .mainNavigation .navigation > li > a:hover {
+  background-color: teal;
+  border: 1px solid royalblue;
+}
+
+.acountSettings {
+  position: relative;
+  background-color: inherit;
+}
+
+.acountSettings button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.accountSettingsMenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 4.8rem;
+  right: 0;
+  width: 9rem;
+  background-color: lightblue;
+  border: 3px solid teal;
+}
+
+.accountSettingsMenu button {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.accountSettingsMenu button:hover {
+  color: blue;
+  font-weight: bold;
+}
+
+.navIcons {
+  font-size: 3rem;
+  color: royalblue;
+  margin: 0 0.5rem;
+}
+
+.navIcons:hover {
+  color: white;
+}
+
+.bellIcon {
+  position: relative;
+  display: block;
+}
+
+.bellIcon span {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.9rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.leftContent,
+.rightContent {
+  width: 13%;
+  border: 2px solid rgb(221, 234, 255);
+  overflow: auto;
+  height: calc(100vh - 5rem);
+  position: fixed;
+}
+
+.leftContent {
+  left:0;
+}
+
+.rightContent {
+  right: 0;
+}
+
+.mainContent {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.mainContent .post {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.mainContent .post .postHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainContent .post .postHeader .profileUserInfo {
+  display: flex;
+  align-items: center;
+}
+
+.profileImage {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.mainContent .post .postHeader .profileUserInfo .profileName {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileOptionsWrapper {
+  position: relative;
+}
+
+.profileOptionsWrapper .profileOptionsDropdown {
+  position: absolute;
+  z-index: 1;
+  right: 0.5rem;
+  width: 40rem;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.profileOptionsWrapper .profileOptionsDropdown button {
+  padding: 0.5rem 0;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.profileOptionsWrapper .profileOptionsDropdown button:hover {
+  color: blue;
+  font-weight: bold;
+  background: white;
+  border: 1px solid blue;
+}
+
+.mainContent .post .postHeader .profileOptions {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mainContent .post .postHeader .profileOptions:hover {
+  background-color: lightgray;
+}
+
+.mainContent .post .content .imgWrapper .imgContent {
+  max-width: 100%;
+}
+
+.mainContent .post .content .imgWrapper {
+  position: relative;
+}
+
+.mainContent .post .content .imgWrapper .infoIcon {
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+  background-color: grey;
+  border-radius: 50%;
+  width: 3rem;
+  height: 2rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.infoIconWrapper {
+  position: relative;
+}
+
+.infoMessage {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 3px solid black;
+  top: -0.5rem;
+  padding: 0.5rem;
+}
+
+.content .postTitle {
+  padding: 1rem;
+}
+
+.content .readMoreButton {
+  width: 100px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content .postDescription {
+  padding: 1rem;
+  margin: 0;
+}
+
+.post .reacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post .reacts .reactsIcon {
+  color: blue;
+}
+
+.post .reactsActions .actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.post .reactsActions .actions .reaction {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: royalblue;
+  border-radius: 1rem;
+}
+
+.post .reactsActions .actions .reaction.touched {
+  color: #00134c;
+  background-color: #00ffff;
+}
+
+.post .reactsActions .actions .reaction.touched#shareButton {
+  position: relative;
+}
+
+.post .reactsActions .actions .reaction.touched#shareButton .noOfSharesBadge {
+  position: absolute;
+  background-color: red;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  top: -0.5rem;
+  right: -0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+.post .reactsActions .actions .reaction:hover {
+  color: teal;
+  background-color: lightblue;
+}
+.post .commentSection {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post .commentSection .newCommentField {
+  width: 75%;
+  border-radius: 0.25rem;
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-color: #bbdcfa;
+}
+
+.post .commentSection .newCommentField::placeholder {
+  color: royalblue;
+}
+
+.post .commentSection .newCommentField:hover {
+  background-color: #c0ddf6;
+  width: 80%;
+}
+
+.post .commentSection .newCommentField:focus {
+  border: 3px solid royalblue;
+}
+
+.post .commentSection .insertCommentButton {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.post .commentSection .insertCommentButton:hover {
+  color: royalblue;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+}
+
+.userComments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.userComments .profileUserComment {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 1rem;
+  gap: 0.5rem;
+}
+
+.userComments .userCommentText {
+  margin: 0 1rem;
+  border: 1px solid #888;
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.userComments .userCommentText:hover {
+  animation-name: comment-animation;
+  animation-duration: 1s;
+}
+
+.userComments .userCommentText .emojiReaction {
+  position: absolute;
+  bottom: 0;
+  right: 0.5rem;
+}
+
+.userComments .commentContent .commentReaction {
+  margin-left: 3rem;
+  color: #888;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.userComments .commentContent .commentReaction .commentReactionButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.post .commentSection .insertCommentButton {
+  /* min-width: 300px; */
+  /* min-height: 60px; */
+  display: inline-flex;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4fd1c5;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgba(79, 209, 197, 1) 100%
+  );
+  border: none;
+  border-radius: 50%;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.post .commentSection .insertCommentButton::before {
+  content: "";
+  border-radius: 50%;
+  min-width: calc(75px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00ffcb;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.post .commentSection .insertCommentButton:hover,
+.post .commentSection .insertCommentButton:focus {
+  color: #313133;
+  transform: translateY(-2px);
+}
+
+.post .commentSection .insertCommentButton:hover::before,
+.post .commentSection .insertCommentButton:focus::before {
+  opacity: 1;
+}
+
+.post .commentSection .insertCommentButton::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00ffcb;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.post .commentSection .insertCommentButton:hover::after,
+.post .commentSection .insertCommentButton:focus::after {
+  animation: none;
+  display: none;
+}
+
+.removeCommentButton {
+  display: none;
+  cursor: pointer;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 75px;
+    height: 75px;
+    opacity: 0;
+  }
+}
+
+@keyframes comment-animation {
+  from {
+    left: -2rem;
+  }
+
+  to {
+    left: 0rem;
+  }
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.price2 {
+  color: grey;
+  font-size: 22px;
+}
+
+.card2 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card2 button:hover {
+  opacity: 0.7;
+}
+
+.order-status {
+  border: 2px solid #e0aaff;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  background-color: #f9f3ff;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  margin-top: 50px;
+}
+
+.order-text {
+  color: #6a0dad;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #540b9e;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 290px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 9000px; 
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 10 0%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.accordion2 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion2:hover {
+  background-color: #ccc;
+}
+
+.panel2 {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+form {
+  border: 2px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 20px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 13px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 200px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+* {box-sizing: border-box}
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+}
+
+* {box-sizing: border-box;}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.btn {
+  background-color: DodgerBlue; 
+  border: none; 
+  color: white; 
+  padding: 12px 16px; 
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.accordion3 {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel3 {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+h5 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+a.fa {
+  font-size: 40px; 
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px; 
+  border-radius: 50%;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s; 
+}
+
+.fa-reddit {
+  background-color: #FF5700;
+}
+
+.fa-twitter {
+  background-color: #55ACEE;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.fa-linkedin {
+  background-color: #0077B5;
+}
+
+.fa-youtube {
+  background-color: #FF0000;
+}
+
+
+.login-container {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #25d366; 
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 50px auto;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #25d366; 
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1da148;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.btn {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: rgb(57, 112, 150);
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  background-color: rgb(74, 146, 189);
+  padding: 5px;
+}
+
+.close-tab {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+#right-sidebar {
+  width: 250px;
+  background-color: rgb(62, 50, 50);
+  padding: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h5 {
+  color: rgb(168, 124, 124);
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.request, .contact {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.btn-accept, .btn-reject {
+  margin-left: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.online {
+  background-color: green;
+}
+
+.offline {
+  background-color: red;
+}
+
+.emoji-btn, .feedback-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#chat-window {
+  width: 300px;
+  background-color: rgb(194, 207, 219);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-video, .btn-file, .btn-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#chat-body {
+  margin-top: 10px;
+  min-height: 150px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#feedback-form {
+  background-color: rgb(202, 221, 248);
+  border: 1px solid #ccc;
+  position: fixed;
+  bottom: 10px;
+  right: 320px;
+  padding: 20px;
+  display: none;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #555;
+  text-decoration: none;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #f39c12; 
+} 

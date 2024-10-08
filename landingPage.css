@@ -1,0 +1,191 @@
+:root {
+    --blue: teal;
+    --orange: #fda400;
+    --orangeHover: #cd8500;
+    --white: white;
+    --black: #000;
+    --grey: #888888;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: gray url('../assests/cover.webp');
+    background-size: cover;
+    height: 35rem;
+    color: var(--white);
+}
+
+header .backImage {
+    width: 3rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background-color: transparent;
+}
+
+header a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 12rem;
+    padding-top: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 2rem 5rem 1.2rem;
+}
+
+header h1 span {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--orange);
+    position: relative;
+    z-index: 1;
+}
+
+header h1 span::before {
+    content: ' ';
+    position: absolute;
+    width: 9rem;
+    height: 1rem;
+    background-color: var(--blue);
+    bottom: 0;
+    z-index: -1;
+}
+
+header .headerDescription {
+    font-weight: bold;
+    max-width: 45rem;
+    margin: 0.5rem 3rem;
+    font-size: 1.1rem;
+    color: var(--orange);
+}
+
+header .formContainer {
+    background-color: var(--white);
+    font-weight: bold;
+    color: var(--black);
+    padding: 2rem;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--orange);
+}
+
+header .formContainer label {
+    color: var(--blue);
+}
+
+header .formContainer p {
+    color: var(--grey);
+    margin-top: 0;
+    position: relative;
+    left: 1rem;
+    align-self: flex-start;
+}
+
+header .formContainer input[type="text"] {
+    width: 100%;
+    border: 1px solid var(--grey);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+header .formContainer input[type="button"] {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+    width: 30%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+header .formContainer input[type="button"]:hover {
+    background-color: var(--orangeHover);
+}
+
+.callToAction {
+    display: flex;
+    flex-direction: column;
+}
+
+.callToAction .callToActionMessage {
+    padding: 5rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.callToAction .callToActionMessage h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.callToAction .callToActionMessage h2::before {
+    content: '';
+    position: absolute;
+    width: 9rem;
+    height: 0.5rem;
+    background-color: var(--blue);
+    bottom: 0;
+    z-index: -1;
+    left: -2rem;
+}
+
+.callToAction img {
+    border-radius: 5rem;
+    padding: 2rem;
+}
+
+.callToActionForm .formContainer {
+    background-color: white;
+    font-weight: bold;
+    color: var(--black);
+    padding: 2rem;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem teal;
+    
+}
+
+.callToActionForm .formContainer input[type="text"] {
+    width: 100%;
+    border: 1px solid darkgray;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.callToActionForm .formContainer input[type="button"] {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+    width: 30%;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.callToActionForm .formContainer input[type="button"]:hover {
+    background-color: var(--blue);
+}
