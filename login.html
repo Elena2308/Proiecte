@@ -9,16 +9,17 @@
 </head>
 <body>
     <section class="formContainer">
-        <h1>Login</h1>
+        <h1 id="headerTitle">Login</h1>
         <form action="">
+            <span id="error" style="display: none;"></span>
             <div class="formField">
                 <label for="username">Username</label>
-                <input type="text" id="username" placeholder="Enter your username">
+                <input type="text" id="username" placeholder="Enter your username" required>
             </div>
 
             <div class="formField">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter your password">
+                <input type="password" id="password" placeholder="Enter your password" required>
             </div>
 
             <div class="formField rememberUserField">
@@ -26,15 +27,17 @@
                 <label for="rememberUser">Click here to remember me</label>
             </div>
 
-            <input type="submit" value="Log in" class="loginButton">
-            <a href="#"><strong>Forgot Password?</strong></a>
+            <input type="submit" value="Log in" class="loginButton" id="loginButton">
+            <a href="#" id="forgotPassword"><strong>Forgot Password?</strong></a>
         </form>
 
         <hr>
-        <button class="registerButton">Create an account</button>
+        <button class="registerButton" id="switchButton">Create an account</button>
 
-        <a href="feed.html">Catre contul meu</a>
+        <a href="pages/feed.html">Catre contul meu</a>
     </section>
     
+
+    <script src="js/auth.js"></script>
 </body>
 </html>
